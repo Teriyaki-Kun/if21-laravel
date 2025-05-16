@@ -30,6 +30,7 @@
             </div>
             </div>
             <div class="card-body">
+                <a href="{{ route('mahasiswa.create') }}" class="btn btn-primary">Tambah</a>
                 <table class="table">
                     <thead>
                         <tr>
@@ -42,17 +43,17 @@
                     <tbody>
                         @foreach ($mahasiswa as $item)
                         <tr>
-                            <td>{{ $item->npm }}</td>
+                            <td>{{ $item->NPM }}</td>
                             <td>{{ $item->nama }}</td>
-                            <td>{{ $item->prodi->nama }}</td>
-                            <td>{{ $item->prodi->fakultas->nama }}</td>
+                            <td>{{ $item->Program_Studi }}</td>
+                            <td>{{ $item->Fakultas }}</td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>  
             </div>
             <!-- /.card-body -->
-            <div class="card-footer">Footer</div>
+            <div class="card-footer">Hehe</div>
             <!-- /.card-footer-->
         </div>
         <!-- /.card -->
